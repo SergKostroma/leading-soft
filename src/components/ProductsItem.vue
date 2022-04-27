@@ -110,7 +110,7 @@
         },
         methods: {
             productAmountIncrease() {
-                this.productAmount = this.productAmount + 1;
+                this.productAmount = +this.productAmount + 1;
             },
             productAmountDecrease() {
                 if (this.productAmount > 1) {
