@@ -1,17 +1,6 @@
 <template>
- <Products/>
+ <router-view/>
 </template>
-
-
-<script>
-import Products from '@/components/Products.vue';
-
-export default{
-    components:{
-        Products,
-    }
-}
-</script>
 
 <style lang="scss">
 *{
@@ -23,5 +12,4 @@ a{
     text-decoration: none;
     color:#000;
 }
-
 </style>

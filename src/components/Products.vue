@@ -2,7 +2,7 @@
     <div id="products_section">
          <div class="products-page ">
               <ProductsItem
-              v-for="elem of ProductsList"
+              v-for="elem of productsList"
               :key='elem'
               :product='elem'
               />
@@ -12,7 +12,7 @@
 
 <script>
 import ProductsItem from '@/components/ProductsItem.vue';
-import ProductsList from '../../products.json'
+import productsList from '../../products.json'
 
 export default{
     components:{
@@ -20,7 +20,7 @@ export default{
     },
     data(){
         return{
-            ProductsList,
+            productsList,
         }
     }
 

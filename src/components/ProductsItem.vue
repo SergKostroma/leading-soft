@@ -63,7 +63,7 @@
                     <div class="product__unit-i"><img src="../assets/images//i.png" alt="info"></div>
                     <div class="product__unit-desc">
                         <p>Продается упаковками:</p>
-                        <p>1 упак. = {{this.product.unitRatioAlt.toFixed(2)}} м. кв. </p>
+                        <p>1 упак. = {{product.unitRatioAlt.toFixed(2)}} м. кв. </p>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="order-wrapper__btn " data-url="/cart/" :data-product-id="this.product.productId">
+                <div class="order-wrapper__btn " data-url="/cart/" :data-product-id="product.productId">
                     <div class="basket-image"><img src="../assets/images//cart.png" alt="basket"></div>
                     <p class="order-wrapper__btn-text">В корзину</p>
                 </div>
@@ -186,6 +186,7 @@
 
         &__status:hover {
             border-bottom: none;
+            margin-bottom: 1px;
         }
 
         &__description {
